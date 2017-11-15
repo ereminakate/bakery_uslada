@@ -45,6 +45,10 @@ module.exports = function (grunt) {
                     spawn: false,
                 },
             },
+            sass: {
+						    files: 'assets/scss/{,*/}*.{scss,sass}',
+						    tasks: ['sass:dev']
+						  }
         },
         validation: {
             options: {
@@ -129,5 +133,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-remove');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['sass:dev', 'watch']);
 }

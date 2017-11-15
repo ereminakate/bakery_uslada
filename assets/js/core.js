@@ -30,7 +30,16 @@ var $body = $('body'),
 var $panelCartToggle = $('[data-toggle="panel-cart"]'),
     $panelCart = $('#panel-cart');
 
+var $panelProductModal = $('#productModal');
+
+$('#header').find('.cart-value').text(localStorage.getItem("sum"));
+$('#header').find('.notification').text(localStorage.getItem("sumCount"));
+$('#header-mobile').find('.notification').text(localStorage.getItem("sumCount"));
+
+window.additional.renderPanelCart();
+
 function showPanelCart() {
+    window.additional.renderPanelCart();
     $panelCart.addClass('show');
     $bodyOverlay.fadeIn(400);
 }
@@ -54,6 +63,7 @@ function hidePanelMobile() {
     $panelMobile.removeClass('show');
     $bodyOverlay.fadeOut(400);
 }
+
 
 var Core = {
     init: function() {
@@ -336,7 +346,7 @@ var Core = {
                 }
                 return false;
             });
-            $panelCart.find('[data-toggle="modal"]').on('click', function(){
+            $panelCart.find('[data-toggle="modal"]').on('click', function(elm){
                 $($(this).attr('href')).modal('show');
             });
 
@@ -646,4 +656,5 @@ $(window).on('scroll', function (){
         setBackToTop(scrolled);
     }
 });
+
 

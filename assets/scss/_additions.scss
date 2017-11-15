@@ -1,0 +1,15 @@
+/* ---------------------------------------------------------------------------- */
+/* --- 9. ADDITIONS
+/* ----------------------------------------------------------------------------- */
+
+.count {
+    &-minus, &-plus {
+        outline-color: black;
+        padding: 0px;
+    }
+}
+
+.modal-product-details .count {
+    border-left: 1px dotted $color-muted;
+    border-right: 1px dotted $color-muted;
+}

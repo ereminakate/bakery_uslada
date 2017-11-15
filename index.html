@@ -55,10 +55,11 @@
                         <ul id="nav-main" class="nav nav-main">
                             <li><a href="page-offers.html">Наши акции</a></li>
                             <li><a href="page-contact.html">Контакты</a></li>
+                            <li><a href="index.html">Меню</a></li>
                         </ul>
                     </nav>
                     <div class="module left">
-                        <a href="menu-grid-navigation.html" class="btn btn-outline-secondary"><span>Заказ</span></a>
+                        <a href="checkout.html" class="btn btn-outline-secondary"><span>Заказать</span></a>
                     </div>
                 </div>
                 <div class="col-md-2">
@@ -67,7 +68,7 @@
                             <i class="ti ti-shopping-cart"></i>
                             <span class="notification">2</span>
                         </span>
-                        <span class="cart-value">$32.98</span>
+                        <span class="cart-value">155 руб.</span>
                     </a>
                 </div>
             </div>
@@ -105,8 +106,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 push-lg-4">
-                        <h1 class="mb-0">Мини-пекарня "Услада"</h1>
-                        <h4 class="text-muted mb-0">Домашняя выпечка, только натуральные ингридиенты</h4>
+                        <h1 class="mb-0 text-sm-center">Доставка пирогов</h1>
+                        <h4 class="text-muted mb-0 text-sm-center">пекарни "Услада"</h4>
                     </div>
                 </div>
             </div>
@@ -120,18 +121,18 @@
                         <!-- Menu Navigation -->
                         <nav id="menu-navigation" class="stick-to-content" data-local-scroll>
                             <ul class="nav nav-menu bg-dark dark">
-                                <li><a href="#Burgers">Сладкие пироги</a></li>
-                                <li><a href="#Pasta">Пироги с мясом</a></li>
-                                <li><a href="#Pizza">Пироги с рыбой</a></li>
-                                <li><a href="#Sushi">Пирожки</a></li>
+                                <li><a href="#SweetPies">Сладкие пироги</a></li>
+                                <li><a href="#MeatPies">Пироги с мясом</a></li>
+                                <li><a href="#FishPies">Пироги с рыбой</a></li>
+                                <li><a href="#Pies">Пирожки</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="col-md-9">
-                        <!-- Menu Category / Burgers -->
-                        <div id="Burgers" class="menu-category">
+                        <!-- Menu Category / Сладкие пироги -->
+                        <div id="SweetPies" class="menu-category">
                             <div class="menu-category-title">
-                                <div class="bg-image"><img src="assets/img/photos/menu-title-sweet-pies.jpg" alt=""></div>
+                                <div class="bg-image"><img src="assets/img/photos/menu-title-sweet-pies.png" alt=""></div>
                                 <h2 class="title">Сладкие пироги</h2>
                             </div>
                             <div class="menu-category-content padded">
@@ -139,82 +140,124 @@
                                     <div class="col-lg-4 col-6">
                                         <!-- Menu Item -->
                                         <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/pie-cherry.jpg" alt="">
+                                            <img class="mb-4" src="assets/img/products/pie-cherry.png" alt="">
                                             <h6 class="mb-0">Пирог с вишней</h6>
                                             <span class="text-muted text-sm">Тесто, вишня</span>
+                                            <div class="row mt-4 buybox"> 
+                                                <div class="input-group col-sm count"> 
+                                                    <button class="btn btn-secondary count-minus col-sm-1 remove"><i class="fa fa-minus" aria-hidden="true"></i></button> 
+                                                    <input class="item_quantity col-sm-3" type="text" maxlength="3" name="count" value="1"> 
+                                                    <button class="btn btn-secondary count-plus col-sm-1 add"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+                                                </div> 
+                                            </div>
                                             <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена</span> 100 руб.</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>В корзину</span></button></div>
+                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена </span><span class="price">100</span> руб.</span></div>
+                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal" data-id="1"><span>В корзину</span></button></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-6">
                                         <!-- Menu Item -->
                                         <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/pumpkin-pie.jpg" alt="">
+                                            <img class="mb-4" src="assets/img/products/pumpkin-pie.png" alt="">
                                             <h6 class="mb-0">Пирог с тыквой</h6>
                                             <span class="text-muted text-sm">Тесто, тыква</span>
+                                            <div class="row mt-4 buybox"> 
+                                                <div class="input-group col-sm count"> 
+                                                    <button class="btn btn-secondary count-minus col-sm-1 remove"><i class="fa fa-minus" aria-hidden="true"></i></button> 
+                                                    <input class="item_quantity col-sm-3" type="text" maxlength="3" name="count" value="1"> 
+                                                    <button class="btn btn-secondary count-plus col-sm-1 add"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+                                                </div> 
+                                            </div>
                                             <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена</span> 80 руб.</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>В корзину</span></button></div>
+                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена </span><span class="price">80</span> руб.</span></div>
+                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal" data-id="2"><span>В корзину</span></button></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-6">
                                         <!-- Menu Item -->
                                         <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/cake-apple.jpg" alt="">
+                                            <img class="mb-4" src="assets/img/products/cake-apple.png" alt="">
                                             <h6 class="mb-0">Пирог с яблоком и корицей</h6>
                                             <span class="text-muted text-sm">Тесто, яблоки, корица</span>
+                                            <div class="row mt-4 buybox"> 
+                                                <div class="input-group col-sm count"> 
+                                                    <button class="btn btn-secondary count-minus col-sm-1 remove"><i class="fa fa-minus" aria-hidden="true"></i></button> 
+                                                    <input class="item_quantity col-sm-3" type="text" maxlength="3" name="count" value="1"> 
+                                                    <button class="btn btn-secondary count-plus col-sm-1 add"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+                                                </div> 
+                                            </div>
                                             <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена</span> 90 руб.</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>В корзину</span></button></div>
+                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена </span><span class="price">90</span> руб.</span></div>
+                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal" data-id="3"><span>В корзину</span></button></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-6">
                                         <!-- Menu Item -->
                                         <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/pie-berries.jpg" alt="">
+                                            <img class="mb-4" src="assets/img/products/pie-berries.png" alt="">
                                             <h6 class="mb-0">Пирог с малиной</h6>
                                             <span class="text-muted text-sm">Тесто, малина</span>
+                                            <div class="row mt-4 buybox"> 
+                                                <div class="input-group col-sm count"> 
+                                                    <button class="btn btn-secondary count-minus col-sm-1 remove"><i class="fa fa-minus" aria-hidden="true"></i></button> 
+                                                    <input class="item_quantity col-sm-3" type="text" maxlength="3" name="count" value="1"> 
+                                                    <button class="btn btn-secondary count-plus col-sm-1 add"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+                                                </div> 
+                                            </div>
                                             <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена</span> 85 руб.</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>В корзину</span></button></div>
+                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена </span><span class="price">85</span> руб.</span></div>
+                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal" data-id="4"><span>В корзину</span></button></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-6">
                                         <!-- Menu Item -->
                                         <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/pie-blueberry.jpg" alt="">
+                                            <img class="mb-4" src="assets/img/products/pie-blueberry.png" alt="">
                                             <h6 class="mb-0">Пирог с черникой</h6>
                                             <span class="text-muted text-sm">Тесто, черника</span>
+                                            <div class="row mt-4 buybox"> 
+                                                <div class="input-group col-sm count"> 
+                                                    <button class="btn btn-secondary count-minus col-sm-1 remove"><i class="fa fa-minus" aria-hidden="true"></i></button> 
+                                                    <input class="item_quantity col-sm-3" type="text" maxlength="3" name="count" value="1"> 
+                                                    <button class="btn btn-secondary count-plus col-sm-1 add"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+                                                </div> 
+                                            </div>
                                             <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена</span> 85 руб.</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>В корзину</span></button></div>
+                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена </span><span class="price">85</span> руб.</span></div>
+                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal" data-id="5"><span>В корзину</span></button></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-6">
                                         <!-- Menu Item -->
                                         <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/lemon-pie.jpg" alt="">
+                                            <img class="mb-4" src="assets/img/products/lemon-pie.png" alt="">
                                             <h6 class="mb-0">Пирог лимонный</h6>
                                             <span class="text-muted text-sm">Тесто, лимон</span>
+                                            <div class="row mt-4 buybox"> 
+                                                <div class="input-group col-sm count"> 
+                                                    <button class="btn btn-secondary count-minus col-sm-1 remove"><i class="fa fa-minus" aria-hidden="true"></i></button> 
+                                                    <input class="item_quantity col-sm-3" type="text" maxlength="3" name="count" value="1"> 
+                                                    <button class="btn btn-secondary count-plus col-sm-1 add"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+                                                </div> 
+                                            </div>
                                             <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена</span> 85 руб.</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>В корзину</span></button></div>
+                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена </span><span class="price">85</span> руб.</span></div>
+                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal" data-id="6"><span>В корзину</span></button></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Menu Category / Pasta -->
-                        <div id="Pasta" class="menu-category">
+                        <!-- Menu Category / Мясные пироги -->
+                        <div id="MeatPies" class="menu-category">
                             <div class="menu-category-title">
-                                <div class="bg-image"><img src="assets/img/photos/menu-title-meat-pies.jpg" alt=""></div>
+                                <div class="bg-image"><img src="assets/img/photos/menu-title-meat-pies.png" alt=""></div>
                                 <h2 class="title">Мясные пироги</h2>
                             </div>
                             <div class="menu-category-content padded">
@@ -222,404 +265,193 @@
                                     <div class="col-lg-4 col-6">
                                         <!-- Menu Item -->
                                         <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-burger.jpg" alt="">
-                                            <h6 class="mb-0">Beef Burger</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
+                                            <img class="mb-4" src="assets/img/products/tomate-meat-pie.png" alt="">
+                                            <h6 class="mb-0">Пирог с мясным фаршем и томатами</h6>
+                                            <span class="text-muted text-sm">Тесто, говяжий фарш,томаты</span>
+                                            <div class="row mt-4 buybox"> 
+                                                <div class="input-group col-sm count"> 
+                                                    <button class="btn btn-secondary count-minus col-sm-1 remove"><i class="fa fa-minus" aria-hidden="true"></i></button> 
+                                                    <input class="item_quantity col-sm-3" type="text" maxlength="3" name="count" value="1"> 
+                                                    <button class="btn btn-secondary count-plus col-sm-1 add"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+                                                </div> 
+                                            </div>
                                             <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
+                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена </span><span class="price">150</span> руб.</span></div>
+                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal" data-id="7"><span>В корзину</span></button></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-6">
                                         <!-- Menu Item -->
                                         <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-pizza.jpg" alt="">
-                                            <h6 class="mb-0">Broccoli</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
+                                            <img class="mb-4" src="assets/img/products/cheese-chicken-pie.png" alt="">
+                                            <h6 class="mb-0">Пирог с куриным фаршем и сыром</h6>
+                                            <span class="text-muted text-sm">Тесто, куриный фарш,сыр</span>
+                                            <div class="row mt-4 buybox"> 
+                                                <div class="input-group col-sm count"> 
+                                                    <button class="btn btn-secondary count-minus col-sm-1 remove"><i class="fa fa-minus" aria-hidden="true"></i></button> 
+                                                    <input class="item_quantity col-sm-3" type="text" maxlength="3" name="count" value="1"> 
+                                                    <button class="btn btn-secondary count-plus col-sm-1 add"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+                                                </div> 
+                                            </div>
                                             <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
+                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена </span><span class="price">150</span> руб.</span></div>
+                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal" data-id="8"><span>В корзину</span></button></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-6">
                                         <!-- Menu Item -->
                                         <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-chicken-burger.jpg" alt="">
-                                            <h6 class="mb-0">Chicken Burger</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
+                                            <img class="mb-4" src="assets/img/products/chicken-pie.png" alt="">
+                                            <h6 class="mb-0">Пирог с курицей</h6>
+                                            <span class="text-muted text-sm">Тесто, курица</span>
+                                            <div class="row mt-4 buybox"> 
+                                                <div class="input-group col-sm count"> 
+                                                    <button class="btn btn-secondary count-minus col-sm-1 remove"><i class="fa fa-minus" aria-hidden="true"></i></button> 
+                                                    <input class="item_quantity col-sm-3" type="text" maxlength="3" name="count" value="1"> 
+                                                    <button class="btn btn-secondary count-plus col-sm-1 add"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+                                                </div> 
+                                            </div>
                                             <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
+                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена </span><span class="price">150</span> руб.</span></div>
+                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal" data-id="9"><span>В корзину</span></button></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-6">
                                         <!-- Menu Item -->
                                         <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-pasta.jpg" alt="">
-                                            <h6 class="mb-0">Creste di Galli</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
+                                            <img class="mb-4" src="assets/img/products/turkish-pie-meat.png" alt="">
+                                            <h6 class="mb-0">Турецкий мясной пирог</h6>
+                                            <span class="text-muted text-sm">Тесто, говяжий фарш</span>
+                                            <div class="row mt-4 buybox"> 
+                                                <div class="input-group col-sm count"> 
+                                                    <button class="btn btn-secondary count-minus col-sm-1 remove"><i class="fa fa-minus" aria-hidden="true"></i></button> 
+                                                    <input class="item_quantity col-sm-3" type="text" maxlength="3" name="count" value="1"> 
+                                                    <button class="btn btn-secondary count-plus col-sm-1 add"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+                                                </div> 
+                                            </div>
                                             <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
+                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена </span><span class="price">150</span> руб.</span></div>
+                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal" data-id="10"><span>В корзину</span></button></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-6">
                                         <!-- Menu Item -->
                                         <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-chicken-wings.jpg" alt="">
-                                            <h6 class="mb-0">Chicken wings</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
+                                            <img class="mb-4" src="assets/img/products/meat-pie.png" alt="">
+                                            <h6 class="mb-0">Пирог с мясным фаршем и сыром</h6>
+                                            <span class="text-muted text-sm">Тесто, говяжий фарш,сыр</span>
+                                            <div class="row mt-4 buybox"> 
+                                                <div class="input-group col-sm count"> 
+                                                    <button class="btn btn-secondary count-minus col-sm-1 remove"><i class="fa fa-minus" aria-hidden="true"></i></button> 
+                                                    <input class="item_quantity col-sm-3" type="text" maxlength="3" name="count" value="1"> 
+                                                    <button class="btn btn-secondary count-plus col-sm-1 add"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+                                                </div> 
+                                            </div>
                                             <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
+                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена </span><span class="price">150</span> руб.</span></div>
+                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal" data-id="11"><span>В корзину</span></button></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-6">
                                         <!-- Menu Item -->
                                         <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-sushi.jpg" alt="">
-                                            <h6 class="mb-0">Nigiri-sushi</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
+                                            <img class="mb-4" src="assets/img/products/tomate-meat-pie.png" alt="">
+                                            <h6 class="mb-0">Пирог с мясным фаршем и томатами</h6>
+                                            <span class="text-muted text-sm">Тесто, говяжий фарш,томаты</span>
+                                            <div class="row mt-4 buybox"> 
+                                                <div class="input-group col-sm count"> 
+                                                    <button class="btn btn-secondary count-minus col-sm-1 remove"><i class="fa fa-minus" aria-hidden="true"></i></button> 
+                                                    <input class="item_quantity col-sm-3" type="text" maxlength="3" name="count" value="1"> 
+                                                    <button class="btn btn-secondary count-plus col-sm-1 add"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+                                                </div> 
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Menu Category / Pizza -->
-                        <div id="Pizza" class="menu-category">
-                            <div class="menu-category-title">
-                                <div class="bg-image"><img src="assets/img/photos/menu-title-pizza.jpg" alt=""></div>
-                                <h2 class="title">Pizza</h2>
-                            </div>
-                            <div class="menu-category-content padded">
-                                <div class="row gutters-sm">
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-burger.jpg" alt="">
-                                            <h6 class="mb-0">Beef Burger</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
                                             <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-pizza.jpg" alt="">
-                                            <h6 class="mb-0">Broccoli</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-chicken-burger.jpg" alt="">
-                                            <h6 class="mb-0">Chicken Burger</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-pasta.jpg" alt="">
-                                            <h6 class="mb-0">Creste di Galli</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-chicken-wings.jpg" alt="">
-                                            <h6 class="mb-0">Chicken wings</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-sushi.jpg" alt="">
-                                            <h6 class="mb-0">Nigiri-sushi</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
+                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена </span><span class="price">150</span> руб.</span></div>
+                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal" data-id="12"><span>В корзину</span></button></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Menu Category / Sushi -->
-                        <div id="Sushi" class="menu-category">
+                        <!-- Menu Category / Пироги с рыбой -->
+                        <div id="FishPies" class="menu-category">
                             <div class="menu-category-title">
-                                <div class="bg-image"><img src="assets/img/photos/menu-title-sushi.jpg" alt=""></div>
-                                <h2 class="title">Sushi</h2>
+                                <div class="bg-image"><img src="assets/img/photos/menu-title-fish-pie.png" alt=""></div>
+                                <h2 class="title">Пироги с рыбой</h2>
                             </div>
                             <div class="menu-category-content padded">
                                 <div class="row gutters-sm">
                                     <div class="col-lg-4 col-6">
                                         <!-- Menu Item -->
                                         <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-burger.jpg" alt="">
-                                            <h6 class="mb-0">Beef Burger</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
+                                            <img class="mb-4" src="assets/img/products/pie-with-fish.png" alt="">
+                                            <h6 class="mb-0">Пирог с горбушей</h6>
+                                            <span class="text-muted text-sm">Тесто, горбуша</span>
+                                            <div class="row mt-4 buybox"> 
+                                                <div class="input-group col-sm count"> 
+                                                    <button class="btn btn-secondary count-minus col-sm-1 remove"><i class="fa fa-minus" aria-hidden="true"></i></button> 
+                                                    <input class="item_quantity col-sm-3" type="text" maxlength="3" name="count" value="1"> 
+                                                    <button class="btn btn-secondary count-plus col-sm-1 add"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+                                                </div> 
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-pizza.jpg" alt="">
-                                            <h6 class="mb-0">Broccoli</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
                                             <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-chicken-burger.jpg" alt="">
-                                            <h6 class="mb-0">Chicken Burger</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-pasta.jpg" alt="">
-                                            <h6 class="mb-0">Creste di Galli</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-chicken-wings.jpg" alt="">
-                                            <h6 class="mb-0">Chicken wings</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-sushi.jpg" alt="">
-                                            <h6 class="mb-0">Nigiri-sushi</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
+                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена </span><span class="price">200</span> руб.</span></div>
+                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal" data-id="13"><span>В корзину</span></button></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Menu Category / Desserts -->
-                        <div id="Desserts" class="menu-category">
+                        <!-- Menu Category / Пирожки -->
+                        <div id="Pies" class="menu-category">
                             <div class="menu-category-title">
-                                <div class="bg-image"><img src="assets/img/photos/menu-title-desserts.jpg" alt=""></div>
-                                <h2 class="title">Desserts</h2>
+                                <div class="bg-image"><img src="assets/img/photos/menu-title-pies.png" alt=""></div>
+                                <h2 class="title">Пирожки</h2>
                             </div>
                             <div class="menu-category-content padded">
                                 <div class="row gutters-sm">
                                     <div class="col-lg-4 col-6">
                                         <!-- Menu Item -->
                                         <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-burger.jpg" alt="">
-                                            <h6 class="mb-0">Beef Burger</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
+                                            <img class="mb-4" src="assets/img/products/pie-with-potato.png" alt="">
+                                            <h6 class="mb-0">Пирожок с картошкой</h6>
+                                            <span class="text-muted text-sm">Тесто, картошка</span>
+                                            <div class="row mt-4 buybox"> 
+                                                <div class="input-group col-sm count"> 
+                                                    <button class="btn btn-secondary count-minus col-sm-1 remove"><i class="fa fa-minus" aria-hidden="true"></i></button> 
+                                                    <input class="item_quantity col-sm-3" type="text" maxlength="3" name="count" value="1"> 
+                                                    <button class="btn btn-secondary count-plus col-sm-1 add"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+                                                </div> 
+                                            </div>
                                             <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
+                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена </span><span class="price">20</span> руб.</span></div>
+                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal" data-id="14"><span>В корзину</span></button></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-6">
                                         <!-- Menu Item -->
                                         <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-pizza.jpg" alt="">
-                                            <h6 class="mb-0">Broccoli</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
+                                            <img class="mb-4" src="assets/img/products/chebureki.png" alt="">
+                                            <h6 class="mb-0">Чебуреки</h6>
+                                            <span class="text-muted text-sm">Тесто, мясо</span>
+                                            <div class="row mt-4 buybox"> 
+                                                <div class="input-group col-sm count"> 
+                                                    <button class="btn btn-secondary count-minus col-sm-1 remove"><i class="fa fa-minus" aria-hidden="true"></i></button> 
+                                                    <input class="item_quantity col-sm-3" type="text" maxlength="3" name="count" value="1"> 
+                                                    <button class="btn btn-secondary count-plus col-sm-1 add"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+                                                </div> 
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-chicken-burger.jpg" alt="">
-                                            <h6 class="mb-0">Chicken Burger</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
                                             <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-pasta.jpg" alt="">
-                                            <h6 class="mb-0">Creste di Galli</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-chicken-wings.jpg" alt="">
-                                            <h6 class="mb-0">Chicken wings</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-sushi.jpg" alt="">
-                                            <h6 class="mb-0">Nigiri-sushi</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Menu Category / Drinks -->
-                        <div id="Drinks" class="menu-category">
-                            <div class="menu-category-title">
-                                <div class="bg-image"><img src="assets/img/photos/menu-title-drinks.jpg" alt=""></div>
-                                <h2 class="title">Drinks</h2>
-                            </div>
-                            <div class="menu-category-content padded">
-                                <div class="row gutters-sm">
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-burger.jpg" alt="">
-                                            <h6 class="mb-0">Beef Burger</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-pizza.jpg" alt="">
-                                            <h6 class="mb-0">Broccoli</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-chicken-burger.jpg" alt="">
-                                            <h6 class="mb-0">Chicken Burger</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-pasta.jpg" alt="">
-                                            <h6 class="mb-0">Creste di Galli</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-chicken-wings.jpg" alt="">
-                                            <h6 class="mb-0">Chicken wings</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <!-- Menu Item -->
-                                        <div class="menu-item menu-grid-item">
-                                            <img class="mb-4" src="assets/img/products/product-sushi.jpg" alt="">
-                                            <h6 class="mb-0">Nigiri-sushi</h6>
-                                            <span class="text-muted text-sm">Beef, cheese, potato, onion, fries</span>
-                                            <div class="row align-items-center mt-4">
-                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">from</span> $9.00</span></div>
-                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Add to cart</span></button></div>
+                                                <div class="col-sm-6"><span class="text-md mr-4"><span class="text-muted">цена </span><span class="price">30</span> руб.</span></div>
+                                                <div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal" onclick="($('#productModal img').attr('src', 'assets/img/products/chebureki.png')" data-id="15"><span>В корзину</span></button></div>
                                             </div>
                                         </div>
                                     </div>
@@ -630,6 +462,7 @@
                 </div>
             </div>
         </div>
+            
 
         <!-- Footer -->
         <footer id="footer" class="bg-dark dark">
@@ -641,40 +474,37 @@
                         <a href="index.html"><img src="assets/img/logo-light.svg" alt="" width="88" class="mt-5 mb-5"></a>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <h5 class="text-muted">Latest news</h5>
+                        <h5 class="text-muted">Наши акции</h5>
                         <ul class="list-posts">
                             <li>
-                                <a href="blog-post.html" class="title">How to create effective webdeisign?</a>
-                                <span class="date">February 14, 2015</span>
+                                <a href="blog-post.html" class="title">30% скидка!</a>
                             </li>
                             <li>
-                                <a href="blog-post.html" class="title">Awesome weekend in Polish mountains!</a>
-                                <span class="date">February 14, 2015</span>
+                                <a href="blog-post.html" class="title">Кофе в подарок</a>
                             </li>
                             <li>
-                                <a href="blog-post.html" class="title">How to create effective webdeisign?</a>
-                                <span class="date">February 14, 2015</span>
+                                <a href="blog-post.html" class="title">Скидки на доставку</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-5 col-md-6">
-                        <h5 class="text-muted">Subscribe Us!</h5>
+                        <h5 class="text-muted">Подпишитесь на наши новости</h5>
                         <!-- MailChimp Form -->
                         <form action="//suelo.us12.list-manage.com/subscribe/post-json?u=ed47dbfe167d906f2bc46a01b&amp;id=24ac8a22ad" id="sign-up-form" class="sign-up-form validate-form mb-3" method="POST">
                             <div class="input-group">
                                 <input name="EMAIL" id="mce-EMAIL" type="email" class="form-control" placeholder="Tap your e-mail..." required>
                                 <span class="input-group-btn">
                                     <button class="btn btn-primary btn-submit" type="submit">
-                                        <span class="description">Subscribe</span>
+                                        <span class="description">Подписаться</span>
                                         <span class="success">
                                             <svg x="0px" y="0px" viewBox="0 0 32 32"><path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/></svg>
                                         </span>
-                                        <span class="error">Try again...</span>
+                                        <span class="error">Попробуйте снова...</span>
                                     </button>
                                 </span>
                             </div>
                         </form>
-                        <h5 class="text-muted mb-3">Social Media</h5>
+                        <h5 class="text-muted mb-3">Мы в соцсетях</h5>
                         <a href="#" class="icon icon-social icon-circle icon-sm icon-facebook"><i class="fa fa-facebook"></i></a>
                         <a href="#" class="icon icon-social icon-circle icon-sm icon-google"><i class="fa fa-google"></i></a>
                         <a href="#" class="icon icon-social icon-circle icon-sm icon-twitter"><i class="fa fa-twitter"></i></a>
@@ -684,7 +514,7 @@
                 </div>
                 <!-- Footer 2nd Row -->
                 <div class="footer-second-row">
-                    <span class="text-muted">Copyright Soup 2017©. Made with love by Suelo.</span>
+                    <span class="text-muted">Copyright Услада 2017©. Made with love by Suelo.</span>
                 </div>
             </div>
 
@@ -701,70 +531,17 @@
     <div id="panel-cart">
         <div class="panel-cart-container">
             <div class="panel-cart-title">
-                <h5 class="title">Your Cart</h5>
+                <h5 class="title">Ваша корзина</h5>
                 <button class="close" data-toggle="panel-cart"><i class="ti ti-close"></i></button>
             </div>
             <div class="panel-cart-content">
                 <table class="table-cart">
-                    <tr>
-                        <td class="title">
-                            <span class="name"><a href="#productModal" data-toggle="modal">Pizza Chicked BBQ</a></span>
-                            <span class="caption text-muted">26”, deep-pan, thin-crust</span>
-                        </td>
-                        <td class="price">$9.82</td>
-                        <td class="actions">
-                            <a href="#productModal" data-toggle="modal" class="action-icon"><i class="ti ti-pencil"></i></a>
-                            <a href="#" class="action-icon"><i class="ti ti-close"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="title">
-                            <span class="name"><a href="#productModal" data-toggle="modal">Beef Burger</a></span>
-                            <span class="caption text-muted">Large (500g)</span>
-                        </td>
-                        <td class="price">$9.82</td>
-                        <td class="actions">
-                            <a href="#productModal" data-toggle="modal" class="action-icon"><i class="ti ti-pencil"></i></a>
-                            <a href="#" class="action-icon"><i class="ti ti-close"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="title">
-                            <span class="name"><a href="#productModal" data-toggle="modal">Extra Burger</a></span>
-                            <span class="caption text-muted">Small (200g)</span>
-                        </td>
-                        <td class="price text-success">$0.00</td>
-                        <td class="actions">
-                            <a href="#productModal" data-toggle="modal" class="action-icon"><i class="ti ti-pencil"></i></a>
-                            <a href="#" class="action-icon"><i class="ti ti-close"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="title">
-                            <span class="name">Weekend 20% OFF</span>
-                        </td>
-                        <td class="price text-success">-$8.22</td>
-                        <td class="actions"></td>
-                    </tr>
                 </table>
-                <div class="cart-summary">
-                    <div class="row">
-                        <div class="col-7 text-right text-muted">Order total:</div>
-                        <div class="col-5"><strong>$21.02</strong></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-7 text-right text-muted">Devliery:</div>
-                        <div class="col-5"><strong>$3.99</strong></div>
-                    </div>
-                    <hr class="hr-sm">
-                    <div class="row text-lg">
-                        <div class="col-7 text-right text-muted">Total:</div>
-                        <div class="col-5"><strong>$24.21</strong></div>
-                    </div>
+                <div class="panel-cart-sum">
                 </div>
             </div>
         </div>
-        <a href="checkout.html" class="panel-cart-action btn btn-secondary btn-block btn-lg"><span>Go to checkout</span></a>
+        <a href="checkout.html" class="panel-cart-action btn btn-secondary btn-block btn-lg"><span>Оформить заказ</span></a>
     </div>
 
     <!-- Panel Mobile -->
@@ -777,7 +554,7 @@
         </div>
         <nav class="module module-navigation"></nav>
         <div class="module module-social">
-            <h6 class="text-sm mb-3">Follow Us!</h6>
+            <h6 class="text-sm mb-3">Мы в соцсетях</h6>
             <a href="#" class="icon icon-social icon-circle icon-sm icon-facebook"><i class="fa fa-facebook"></i></a>
             <a href="#" class="icon icon-social icon-circle icon-sm icon-google"><i class="fa fa-google"></i></a>
             <a href="#" class="icon icon-social icon-circle icon-sm icon-twitter"><i class="fa fa-twitter"></i></a>
@@ -790,134 +567,70 @@
     <div id="body-overlay"></div>
 
 </div>
-
 <!-- Modal / Product -->
 <div class="modal fade" id="productModal" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header modal-header-lg dark bg-dark">
                 <div class="bg-image"><img src="assets/img/photos/modal-add.jpg" alt=""></div>
-                <h4 class="modal-title">Specify your dish</h4>
+                <h4 class="modal-title">Ваш товар добавлен в корзину!</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="ti-close"></i></button>
             </div>
             <div class="modal-product-details">
                 <div class="row align-items-center">
-                    <div class="col-9">
-                        <h6 class="mb-0">Boscaiola Pasta</h6>
-                        <span class="text-muted">Pasta, Cheese, Tomatoes, Olives</span>
+                    <div class="col-6">
+                        <h6 class="mb-0">Товар</h6>
+                        <span class="text-muted">Описание</span>
                     </div>
-                    <div class="col-3 text-lg text-right">$9.00</div>
+                    <div class="col-2 count text-lg text-center">Кол-во</div>
+                    <div class="col-4 text-lg text-right"><span class="modal-price">Цена</span> руб.</div>
                 </div>
             </div>
-            <div class="modal-body panel-details-container">
-                <!-- Panel Details / Size -->
-                <div class="panel-details">
-                    <h5 class="panel-details-title">
-                        <label class="custom-control custom-radio">
-                            <input name="radio_title_size" type="radio" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                        </label>
-                        <a href="#panelDetailsSize" data-toggle="collapse">Size</a>
-                    </h5>
-                    <div id="panelDetailsSize" class="collapse show">
-                        <div class="panel-details-content">
-                            <div class="form-group">
-                                <label class="custom-control custom-radio">
-                                    <input name="radio_size" type="radio" class="custom-control-input" checked>
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Small - 100g ($9.99)</span>
-                                </label>
-                            </div>
-                            <div class="form-group">
-                                <label class="custom-control custom-radio">
-                                    <input name="radio_size" type="radio" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Medium - 200g ($14.99)</span>
-                                </label>
-                            </div>
-                            <div class="form-group">
-                                <label class="custom-control custom-radio">
-                                    <input name="radio_size" type="radio" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Large - 350g ($21.99)</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Panel Details / Additions -->
-                <div class="panel-details">
-                    <h5 class="panel-details-title">
-                        <label class="custom-control custom-radio">
-                            <input name="radio_title_additions" type="radio" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                        </label>
-                        <a href="#panelDetailsAdditions" data-toggle="collapse">Additions</a>
-                    </h5>
-                    <div id="panelDetailsAdditions" class="collapse">
-                        <div class="panel-details-content">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                            <span class="custom-control-description">Tomato ($1.29)</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                            <span class="custom-control-description">Ham ($1.29)</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                            <span class="custom-control-description">Chicken ($1.29)</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                            <span class="custom-control-description">Cheese($1.29)</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                            <span class="custom-control-description">Bacon ($1.29)</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Panel Details / Other -->
-                <div class="panel-details">
-                    <h5 class="panel-details-title">
-                        <label class="custom-control custom-radio">
-                            <input name="radio_title_other" type="radio" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                        </label>
-                        <a href="#panelDetailsOther" data-toggle="collapse">Other</a>
-                    </h5>
-                    <div id="panelDetailsOther" class="collapse">
-                        <textarea cols="30" rows="4" class="form-control" placeholder="Put this any other informations..."></textarea>
-                    </div>
-                </div>
-            </div>
-            <button type="button" class="modal-btn btn btn-secondary btn-block btn-lg" data-dismiss="modal"><span>Add to Cart</span></button>
+            
+                
+            <a href="checkout.html" class="panel-cart-action btn btn-secondary btn-block btn-lg"><span>Оформить заказ</span></a>
         </div>
     </div>
 </div>
+                
+<template id="cart-product-template" style="display: none">
+        <tr>
+            <td class="title">
+                <span class="name"><a href="#productModal" data-toggle="modal">Продукт</a></span>
+                <span class="caption text-muted">описание</span>
+            </td>
+            <td class="count">N шт</td>
+            <td class="price">N руб.</td>
+            <td class="actions">
+                <a href="#productModal" data-toggle="modal" class="action-icon"><i class="ti ti-pencil"></i></a>
+                <a href="#" class="action-icon action-delete" data-id="n"><i class="ti ti-close"></i></a>
+            </td>
+        </tr>
+</template>
+              
+<template id="cart-summary-template" style="display: none">
+    <div class="cart-summary">
+        <div class="row">
+            <div class="col-7 text-right text-muted">Итого по заказу:</div>
+            <div class="col-5 sum"><strong>105 руб.</strong></div>
+        </div>
+        <div class="row">
+            <div class="col-7 text-right text-muted">Доставка:</div>
+            <div class="col-5 delivery-sum"><strong>50 руб.</strong></div>
+        </div>
+        <hr class="hr-sm">
+        <div class="row text-lg">
+            <div class="col-7 text-right text-muted">Всего:</div>
+            <div class="col-5 summary"><strong>155 руб.</strong></div>
+        </div>
+    </div>
+</template>
+    
+<template id="cart-empty-template" style="display: none">
+    <div class="cart-empty col-12 text-center text-lg mt-5 mb-5">
+        Ваша корзина пока пуста.
+    </div>
+</template>
 
 <!-- JS Plugins -->
 <script src="assets/plugins/jquery/dist/jquery.min.js"></script>
@@ -933,9 +646,11 @@
 <script src="assets/plugins/skrollr/dist/skrollr.min.js"></script>
 <script src="assets/plugins/animsition/dist/js/animsition.min.js"></script>
 
+<script src="assets/js/additional.js"></script>
+    <script src="assets/js/additional-checkout.js"></script>
 <!-- JS Core -->
 <script src="assets/js/core.js"></script>
 
-</body>
+
 
 </html>
